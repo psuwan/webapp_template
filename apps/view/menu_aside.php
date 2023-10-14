@@ -2,8 +2,8 @@
     <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/soft-ui-dashboard-pro/pages/dashboards/default.html " target="_blank">
-            <img src="./assets_softui/img/logo-ct-dark.png" class="navbar-brand-img h-100" alt="main_logo">
-            <span class="ms-1 font-weight-bold"> Project Title Here..! </span>
+            <img src="./assets_softui/img/cylab_logo.png" class="navbar-brand-img h-100" alt="main_logo">
+            <span class="ms-1 font-weight-bold"> CY's Lab ... </span>
         </a>
     </div>
     <hr class="horizontal dark mt-0">
@@ -30,8 +30,8 @@
                 </a>
                 <div class="collapse  show " id="dashboardsExamples">
                     <ul class="nav ms-4 ps-3">
-                        <li class="nav-item active">
-                            <a class="nav-link active" href="../../pages/dashboards/default.html">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="../../pages/dashboards/default.html">
                                 <span class="sidenav-mini-icon"> D </span>
                                 <span class="sidenav-normal"> Default </span>
                             </a>
@@ -70,8 +70,8 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="../../pages/dashboards/crm.html">
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="../../pages/dashboards/crm.html">
                                 <span class="sidenav-mini-icon"> C </span>
                                 <span class="sidenav-normal"> CRM </span>
                             </a>
