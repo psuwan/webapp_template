@@ -8,7 +8,7 @@ date_default_timezone_set('Asia/Bangkok');
 const DS = DIRECTORY_SEPARATOR;
 
 $dir_root = realpath(dirname(dirname(__FILE__)));
-$dir_app  = $dir_root . DS . 'app';
+$dir_app  = $dir_root . DS . 'apps';
 
 defined('APPLICATION_PATH') || define('APPLICATION_PATH', $dir_app);
 
