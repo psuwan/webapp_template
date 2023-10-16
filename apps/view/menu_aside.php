@@ -2,7 +2,7 @@
     <div class="sidenav-header">
         <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
         <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/soft-ui-dashboard-pro/pages/dashboards/default.html " target="_blank">
-            <img src="./assets_softui/img/apks_smrtiot.png" class="navbar-brand-img h-100" alt="main_logo">
+            <img src="./assets_softui/img/apks_logo_01.svg" class="navbar-brand-img h-100" alt="main_logo">
             <span class="ms-1 font-weight-bold"> Smart IoT... </span>
         </a>
     </div>
@@ -43,11 +43,13 @@
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link " href="../../pages/dashboards/smart-home.html">
+                            <a class="nav-link active" href="../../pages/dashboards/smart-home.html">
                                 <span class="sidenav-mini-icon"> S </span>
-                                <span class="sidenav-normal"> Smart Home </span>
+                                <span class="sidenav-normal"> Machine #01 </span>
                             </a>
                         </li>
+
+                        <!-- remove by psuwan --><!--
                         <li class="nav-item ">
                             <a class="nav-link " data-bs-toggle="collapse" aria-expanded="false" href="#vrExamples">
                                 <span class="sidenav-mini-icon"> V </span>
@@ -70,8 +72,10 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link active" href="../../pages/dashboards/crm.html">
+                    -->
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="../../pages/dashboards/crm.html">
                                 <span class="sidenav-mini-icon"> C </span>
                                 <span class="sidenav-normal"> CRM </span>
                             </a>
