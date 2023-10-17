@@ -30,7 +30,7 @@
                 </a>
                 <div class="collapse  show " id="dashboardsExamples">
                     <ul class="nav ms-4 ps-3">
-                        <li class="nav-item ">
+                        <!-- <li class="nav-item ">
                             <a class="nav-link " href="../../pages/dashboards/default.html">
                                 <span class="sidenav-mini-icon"> D </span>
                                 <span class="sidenav-normal"> Default </span>
@@ -41,9 +41,9 @@
                                 <span class="sidenav-mini-icon"> A </span>
                                 <span class="sidenav-normal"> Automotive </span>
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item ">
-                            <a class="nav-link active" href="../../pages/dashboards/smart-home.html">
+                            <a class="nav-link active" href="?page=dashboard&action=view&machine=mch01">
                                 <span class="sidenav-mini-icon"> S </span>
                                 <span class="sidenav-normal"> Machine #01 </span>
                             </a>
@@ -73,13 +73,13 @@
                             </div>
                         </li>
                     -->
-
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link " href="../../pages/dashboards/crm.html">
                                 <span class="sidenav-mini-icon"> C </span>
                                 <span class="sidenav-normal"> CRM </span>
                             </a>
-                        </li>
+                        </li> -->
+
                     </ul>
                 </div>
             </li>
