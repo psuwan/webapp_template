@@ -3,7 +3,7 @@
 date_default_timezone_set('Asia/Bangkok');
 
 $current_view = $config['PATH_TO_VIEW'] . DS . 'dashboard' . DS;
-// include_once $config['DATA_PATH']  . 'data_services.php';
+include_once $config['DATA_PATH']  . 'data_machine.php';
 
 switch (get('action')) {
     default:
