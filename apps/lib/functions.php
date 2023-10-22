@@ -820,3 +820,36 @@ function get($name, $default = '')
 {
     return isset($_REQUEST[$name]) ? $_REQUEST[$name] : $default;
 }
+
+// Original from youtube "web programming"
+// function is_menu_show($page, $current_link)
+// {
+//     echo $page == $current_link ? 'show' : '';
+// }
+
+// function is_menu_active($gettext, $current_text)
+// {
+//     echo $gettext == $current_text ? 'active' : '';
+// }
+
+function hiligh_menu_single_level_check($txtMenu, $txtCheck, $txtDisplay)
+{
+    if ($txtMenu === $txtCheck) {
+        echo $txtDisplay;
+    } else {
+        echo '';
+    }
+}
+
+function hiligh_menu_double_level_check($txtMenu1st, $txtMenu2nd, $txtCheck1st, $txtCheck2nd, $txtDisplay)
+{
+    if ($txtMenu1st === $txtCheck1st) {
+        if ($txtMenu2nd === $txtCheck2nd) {
+            echo $txtDisplay;
+        } else {
+            echo '';
+        }
+    } else {
+        echo '';
+    }
+}
