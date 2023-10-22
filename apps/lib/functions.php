@@ -8,8 +8,13 @@ date_default_timezone_set('Asia/Bangkok');
 
 define('db_host', 'localhost');
 define('db_user', 'root');
-define('db_pass', '@dmin1234S');
-define('db_name', 'db_tstmod');
+
+// for Windows environment
+// define('db_pass', '@dmin1234S');
+// for Mac environment
+define('db_pass', 'root');
+
+define('db_name', 'db_machdat');
 define('db_char', 'utf8mb4');
 
 // Connected to database
