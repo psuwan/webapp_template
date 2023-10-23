@@ -24,14 +24,13 @@
 
                 <?php
 
-                // use function PHPSTORM_META\map;
+                use function PHPSTORM_META\map;
 
                 $reqURI = $_SERVER['REQUEST_URI'];
                 $reqURI = explode("?", $reqURI);
                 if (count($reqURI) > 1) {
                     $levelBC = explode("&", $reqURI[1]);
                 ?>
-
                     <?php for ($iLevel = 0; $iLevel < count($levelBC); $iLevel++) : ?>
                         <?php
                         $txtBC = explode("=", $levelBC[$iLevel]);
@@ -44,7 +43,6 @@
                             <li class="breadcrumb-item text-sm text-dark active"><?= $txtBC[1]; ?></li>
                         <?php endif; ?>
                     <?php endfor; ?>
-
                 <?php
                 }
                 ?>
