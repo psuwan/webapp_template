@@ -1,13 +1,6 @@
 <nav class="navbar navbar-main navbar-expand-lg position-sticky mt-4 top-1 px-0 mx-4 shadow-none border-radius-xl z-index-sticky" id="navbarBlur" data-scroll="true">
     <div class="container-fluid py-1 px-3">
-        <?php
 
-        use function PHPSTORM_META\map;
-
-        $reqURI = $_SERVER['REQUEST_URI'];
-        $reqURI = explode("?", $reqURI);
-        $levelBC = explode("&", $reqURI[1]);
-        ?>
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
@@ -28,19 +21,33 @@
                         </svg>
                     </a>
                 </li>
-                <?php for ($iLevel = 0; $iLevel < count($levelBC); $iLevel++) : ?>
-                    <?php
-                    $txtBC = explode("=", $levelBC[$iLevel]);
-                    ?>
-                    <?php if ($iLevel < (count($levelBC) - 1)) : ?>
-                        <li class="breadcrumb-item text-sm"><a href="#"><?= $txtBC[1]; ?></a></li>
-                    <?php endif; ?>
 
-                    <?php if ($iLevel == (count($levelBC) - 1)) : ?>
-                        <li class="breadcrumb-item text-sm text-dark active"><?= $txtBC[1]; ?></li>
-                    <?php endif; ?>
+                <?php
 
-                <?php endfor; ?>
+                // use function PHPSTORM_META\map;
+
+                $reqURI = $_SERVER['REQUEST_URI'];
+                $reqURI = explode("?", $reqURI);
+                if (count($reqURI) > 1) {
+                    $levelBC = explode("&", $reqURI[1]);
+                ?>
+
+                    <?php for ($iLevel = 0; $iLevel < count($levelBC); $iLevel++) : ?>
+                        <?php
+                        $txtBC = explode("=", $levelBC[$iLevel]);
+                        ?>
+                        <?php if ($iLevel < (count($levelBC) - 1)) : ?>
+                            <li class="breadcrumb-item text-sm"><a href="#"><?= $txtBC[1]; ?></a></li>
+                        <?php endif; ?>
+
+                        <?php if ($iLevel == (count($levelBC) - 1)) : ?>
+                            <li class="breadcrumb-item text-sm text-dark active"><?= $txtBC[1]; ?></li>
+                        <?php endif; ?>
+                    <?php endfor; ?>
+
+                <?php
+                }
+                ?>
                 <!-- <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a></li> -->
                 <!-- <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Machine #01</li> -->
             </ol>
