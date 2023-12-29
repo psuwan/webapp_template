@@ -30,7 +30,15 @@ if (file_exists($view)) {
 }
 
 
-if (empty($_SESSION['MEMBERLOGIN']))
-    include_once $config['PATH_TO_VIEW'] . 'layout_guest.phtml';
-else
-    include_once $config['PATH_TO_VIEW'] . 'layout.phtml';
+$layout = get('layout', 'guest');
+
+switch ($layout) {
+    default:
+    case 'guest':
+        include_once $config['PATH_TO_VIEW'] . 'layout_guest.phtml';
+        break;
+
+    case 'member':
+        include_once $config['PATH_TO_VIEW'] . 'layout.phtml';
+        break;
+}
