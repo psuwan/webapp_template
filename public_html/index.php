@@ -29,4 +29,8 @@ if (file_exists($view)) {
     $main_content =  $view;
 }
 
-include_once $config['PATH_TO_VIEW'] . 'layout.phtml';
+
+if (empty($_SESSION['MEMBERLOGIN']))
+    include_once $config['PATH_TO_VIEW'] . 'layout_guest.phtml';
+else
+    include_once $config['PATH_TO_VIEW'] . 'layout.phtml';
